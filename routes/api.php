@@ -21,6 +21,6 @@ Route::middleware('auth:api')->group(function () {
 Route::resource('meals', 'MealController');
 Route::get('meals', 'MealController@index');
 Route::post('meals', 'MealController@store');
-Route::get('meals/{meal}', 'MealController@show');
+Route::get('meals/{id}', 'MealController@show');
 Route::put('meals/{meal}', 'MealController@update');
 Route::delete('meals/{meal}', 'MealController@delete');
