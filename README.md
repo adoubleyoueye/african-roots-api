@@ -1,5 +1,5 @@
-# Laravel Passport - Create REST API with authentication
-> How to install
+# African Roots API using Laravel Passport  
+How to install
  - Clone the repository
  - Set up database credentials in .env file
  - Run `composer update`
@@ -7,6 +7,8 @@
  - Run `php artisan passport:install`
 
 
-Read the tutorial at [Laravel Passport - Create REST API with authentication](https://tutsforweb.com/laravel-passport-create-rest-api-with-authentication)
+## Sources 
 
-Learn more about Laravel at [https://tutsforweb.com](https://tutsforweb.com)
+- https://tutsforweb.com/laravel-passport-create-rest-api-with-authentication)
+- https://jenssegers.com/projects/laravel-mongodb
+- https://medium.com/@alexrenoki/when-to-use-nosql-getting-started-with-mongodb-in-laravel-f5376ceaf545
