@@ -31,18 +31,26 @@ return [
     |                    "custom", "stack"
     |
     */
+        'channels' => [
+            'stack' => [
+                'driver' => 'stack',
+                'channels' => ['single'],
+            ],
+            'single' => [
+                'driver' => 'errorlog',
+                'level' => 'debug',
+            ],
+    // 'channels' => [
+    //     'stack' => [
+    //         'driver' => 'stack',
+    //         'channels' => ['single'],
+    //     ],
 
-    'channels' => [
-        'stack' => [
-            'driver' => 'stack',
-            'channels' => ['single'],
-        ],
-
-        'single' => [
-            'driver' => 'single',
-            'path' => storage_path('logs/laravel.log'),
-            'level' => 'debug',
-        ],
+    //     'single' => [
+    //         'driver' => 'single',
+    //         'path' => storage_path('logs/laravel.log'),
+    //         'level' => 'debug',
+    //     ],
 
         'daily' => [
             'driver' => 'daily',

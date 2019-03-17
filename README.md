@@ -12,3 +12,4 @@ How to install
 - https://tutsforweb.com/laravel-passport-create-rest-api-with-authentication)
 - https://jenssegers.com/projects/laravel-mongodb
 - https://medium.com/@alexrenoki/when-to-use-nosql-getting-started-with-mongodb-in-laravel-f5376ceaf545
+- https://devcenter.heroku.com/articles/getting-started-with-laravel
