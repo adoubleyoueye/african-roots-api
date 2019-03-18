@@ -10,7 +10,7 @@ class Meal extends Model
     protected $table = 'meals';
 
     protected $fillable = [
-        'name', 'rating'
+        'name','price', 'price', 'rating'
     ];
     public function meal()
     {
