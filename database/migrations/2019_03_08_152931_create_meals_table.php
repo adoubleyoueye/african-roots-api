@@ -19,6 +19,8 @@ class CreateMealsTable extends Migration
             $table->integer('ingredient_id');
             $table->integer('price_id');
             $table->integer('rating');
+            $table->string('category');
+            $table->string('image');
             $table->timestamps();
         });
     }
