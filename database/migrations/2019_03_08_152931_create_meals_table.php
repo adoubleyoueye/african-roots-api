@@ -22,6 +22,7 @@ class CreateMealsTable extends Migration
             $table->string('category');
             $table->string('image');
             $table->timestamps();
+            $table->foreign('ingredient_id')->references('id')->on('inverntory');
         });
     }
 
