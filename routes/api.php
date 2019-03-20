@@ -24,3 +24,12 @@ Route::post('meals', 'MealController@store');
 Route::get('meals/{id}', 'MealController@show');
 Route::put('meals/{meal}', 'MealController@update');
 Route::delete('meals/{meal}', 'MealController@delete');
+Route::group([
+    'middleware' => ['api', 'cors'],
+    'namespace' => $this->namespace,
+    'prefix' => 'api',
+], function ($router) {
+     //Add you routes here, for example:
+    //  Route::apiResource('/posts','PostController');
+     Route::get('meals', 'MealController@index');
+});
