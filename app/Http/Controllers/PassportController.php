@@ -27,7 +27,7 @@ class PassportController extends Controller
             'password' => bcrypt($request->password)
         ]);
 
-        $token = $user->createToken('TutsForWeb')->accessToken;
+        $token = $user->createToken('africanroots')->accessToken;
 
         return response()->json(['token' => $token], 200);
     }
@@ -46,7 +46,7 @@ class PassportController extends Controller
         ];
 
         if (auth()->attempt($credentials)) {
-            $token = auth()->user()->createToken('TutsForWeb')->accessToken;
+            $token = auth()->user()->createToken('africanroots')->accessToken;
             return response()->json(['token' => $token], 200);
         } else {
             return response()->json(['error' => 'UnAuthorised'], 401);
