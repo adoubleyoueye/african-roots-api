@@ -25,3 +25,10 @@ Route::get('meals/{id}', 'MealController@show');
 Route::put('meals/{meal}', 'MealController@update');
 Route::delete('meals/{meal}', 'MealController@delete');
 Route::get('meals', array('middleware' => 'cors', 'uses' => 'MealController@index'));
+
+Route::resource('meals', 'MealController');
+// Route::get('meals', 'MealController@index');
+// Route::post('meals', 'MealController@store');
+// Route::get('meals/{id}', 'MealController@show');
+// Route::put('meals/{meal}', 'MealController@update');
+// Route::delete('meals/{meal}', 'MealController@delete');

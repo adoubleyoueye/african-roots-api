@@ -19,3 +19,4 @@ All meals
 - https://medium.com/@alexrenoki/when-to-use-nosql-getting-started-with-mongodb-in-laravel-f5376ceaf545
 - https://devcenter.heroku.com/articles/getting-started-with-laravel
 - https://www.techrrival.com/deploy-laravel-production-server-ubuntu-github/
+- https://stackoverflow.com/questions/49905826/trying-to-get-property-id-of-non-object-on-passport-after-createtoken
