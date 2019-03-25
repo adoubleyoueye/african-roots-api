@@ -17,7 +17,7 @@ class MealsTableSeeder extends Seeder
             'price_id' =>  0,
             'rating' => 4.8,
             'category' => 'Breakfasts',
-            'image' => 'url("african-roots-client/public/meals-pictures/apple-pancakes.jpeg")'
+            'image' => 'apple-pancakes.png'
         ]);
         DB::table('meals')->insert([
             'name' => 'Baked peppers',
@@ -25,7 +25,7 @@ class MealsTableSeeder extends Seeder
             'price_id' =>  0,
             'rating' => 4.5,
             'category' => 'Light meals',
-            'image' => 'url("african-roots-client/public/meals-pictures/baked-pepper.jpg")'
+            'image' => 'baked-pepper.png'
         ]);
         DB::table('meals')->insert([
             'name' => 'Black bean and lentil curry',
@@ -33,7 +33,7 @@ class MealsTableSeeder extends Seeder
             'price_id' =>  0,
             'rating' => 4.1,
             'category' => 'Light meals',
-            'image' => 'url("african-roots-client/public/meals-pictures/black-bean-lentil-curry.jpg")'
+            'image' => 'black-bean-lentil-curry.png'
         ]);
         DB::table('meals')->insert([
             'name' => 'Blueberry smoothie',
@@ -41,7 +41,7 @@ class MealsTableSeeder extends Seeder
             'price_id' =>  0,
             'rating' => 4.3,
             'category' => 'Drinks',
-            'image' => 'url("african-roots-client/public/meals-pictures/blueberry-smoothie.jpg")'
+            'image' => 'blueberry-smoothie.png'
         ]);
         DB::table('meals')->insert([
             'name' => 'Braaibroodjie',
@@ -49,7 +49,7 @@ class MealsTableSeeder extends Seeder
             'price_id' =>  0,
             'rating' => 4.5,
             'category' => 'Light meals',
-            'image' => 'url("african-roots-client/public/meals-pictures/braaibroodjie.jpg")'
+            'image' => 'braaibroodjie.png'
         ]);
         DB::table('meals')->insert([
             'name' => 'Bunny chow',
@@ -57,7 +57,7 @@ class MealsTableSeeder extends Seeder
             'price_id' =>  0,
             'rating' => 4.7, 
             'category' => 'Light meals',
-            'image' => 'url("african-roots-client/public/meals-pictures/bunny-chow.jpg")'
+            'image' => 'bunny-chow.png'
         ]);
         DB::table('meals')->insert([
             'name' => 'Butternut muffin',
@@ -65,7 +65,7 @@ class MealsTableSeeder extends Seeder
             'price_id' =>  0,
             'rating' => 4.6,
             'category' => 'Breakfassa',
-            'image' => 'url("african-roots-client/public/meals-pictures/butternut-muffin.jpeg")'
+            'image' => 'butternut-muffin.png'
         ]);
         DB::table('meals')->insert([
             'name' => 'Cappuccino',
@@ -73,7 +73,7 @@ class MealsTableSeeder extends Seeder
             'price_id' =>  0,
             'rating' => 4.7,
             'category' => 'Drinks',
-            'image' => 'url("african-roots-client/public/meals-pictures/cappuccino.jpg")'
+            'image' => 'cappuccino.png'
         ]);
         DB::table('meals')->insert([
             'name' => 'Creamy potato soup',
@@ -81,7 +81,7 @@ class MealsTableSeeder extends Seeder
             'price_id' =>  0,
             'rating' => 4.9,
             'category' => 'Light meals',
-            'image' => 'url("african-roots-client/public/meals-pictures/potato-soup.jpg")'
+            'image' => 'potato-soup.png'
         ]);
         DB::table('meals')->insert([
             'name' => 'Fresh fruit juices',
@@ -89,7 +89,7 @@ class MealsTableSeeder extends Seeder
             'price_id' =>  0,
             'rating' => 4.5,
             'category' => 'Drinks',
-            'image' => 'url("african-roots-client/public/meals-pictures/fruit-juice.jpeg")'
+            'image' => 'fruit-juice.png'
         ]);
         DB::table('meals')->insert([
             'name' => 'Koeksisters',
@@ -97,7 +97,7 @@ class MealsTableSeeder extends Seeder
             'price_id' =>  0,
             'rating' => 4.9,
             'category' => 'Desserts',
-            'image' => 'url("african-roots-client/public/meals-pictures/koeksisters.jpg")'
+            'image' => 'koeksisters.jpg")'
         ]);
         DB::table('meals')->insert([
             'name' => 'Mango and berry smoothie',
@@ -105,7 +105,7 @@ class MealsTableSeeder extends Seeder
             'price_id' =>  0,
             'rating' => 4.2,
             'category' => 'Drinks',
-            'image' => 'url("african-roots-client/public/meals-pictures/mango-berry-smoothie.jpg")'
+            'image' => 'mango-berry-smoothie.png'
         ]);
         DB::table('meals')->insert([
             'name' => 'Melktert',
@@ -113,7 +113,7 @@ class MealsTableSeeder extends Seeder
             'price_id' =>  0,
             'rating' => 4.9,
             'category' => 'Desserts',
-            'image' => 'url("african-roots-client/public/meals-pictures/melktert.jpg")'
+            'image' => 'melktert.png'
         ]);
         DB::table('meals')->insert([
             'name' => 'Mini meatless sausage rolls',
@@ -121,7 +121,7 @@ class MealsTableSeeder extends Seeder
             'price_id' =>  0,
             'rating' => 4.8,
             'category' => 'Light meals',
-            'image' => 'url("african-roots-client/public/meals-pictures/mini-sausage-rolls.jpg")'
+            'image' => 'mini-sausage-rolls.png'
         ]);
         DB::table('meals')->insert([
             'name' => 'Mushroom and spinach pizza',
@@ -129,7 +129,7 @@ class MealsTableSeeder extends Seeder
             'price_id' =>  0,
             'rating' => 4.9,
             'category' => 'Light meals',
-            'image' => 'url("african-roots-client/public/meals-pictures/pizza.jpg")'
+            'image' => 'pizza.png'
         ]);
         DB::table('meals')->insert([
             'name' => 'Polenta fries',
@@ -137,7 +137,7 @@ class MealsTableSeeder extends Seeder
             'price_id' =>  0,
             'rating' => 4.7,
             'category' => 'Light meals',
-            'image' => 'url("african-roots-client/public/meals-pictures/polenta-fries.jpg")'
+            'image' => 'polenta-fries.png'
         ]);
         DB::table('meals')->insert([
             'name' => 'Quinoa bowl',
@@ -145,7 +145,7 @@ class MealsTableSeeder extends Seeder
             'price_id' =>  0,
             'rating' => 4.8,
             'category' => 'Breakfasts',
-            'image' => 'url("african-roots-client/public/meals-pictures/quinoa-bowl.jpg")'
+            'image' => 'quinoa-bowl.png'
         ]);
         DB::table('meals')->insert([
             'name' => 'Scones',
@@ -153,7 +153,7 @@ class MealsTableSeeder extends Seeder
             'price_id' =>  0,
             'rating' => 4.5,
             'category' => 'Breakfasts',
-            'image' => 'url("african-roots-client/public/meals-pictures/scones.jpeg")'
+            'image' => 'scones.png'
         ]);
     }
 }
