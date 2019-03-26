@@ -4,6 +4,7 @@ namespace App;
 
 // use Illuminate\Foundation\Auth\User as Authenticatable;
 use Jenssegers\Mongodb\Auth\User as Authenticatable;
+use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
 
@@ -31,6 +32,6 @@ class User extends Authenticatable
 
     public function meals()
     {
-        return $this->hasMany(Meal::class);
+        return $this->belongsToMany(Meal::class);
     }
 }

@@ -17,9 +17,13 @@ Route::post('register', 'PassportController@register');
 Route::middleware('auth:api')->group(function () {
     Route::get('user', 'PassportController@details');
 });
-Route::get('meals', 'MealController@index');
+
 Route::get('inventory', 'InventoryController@index');
+Route::get('meals', 'MealController@index');
 Route::post('meals', 'MealController@store');
+Route::get('orders', 'OrderController@index');
+Route::get('orders/create', 'OrderController@create');
+
 
 
 
