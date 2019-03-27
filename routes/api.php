@@ -22,7 +22,7 @@ Route::get('inventory', 'InventoryController@index');
 Route::get('meals', 'MealController@index');
 Route::post('meals', 'MealController@store');
 Route::get('orders', 'OrderController@index');
-Route::get('orders/create', 'OrderController@create');
+Route::post('orders', 'OrderController@store');
 
 
 
