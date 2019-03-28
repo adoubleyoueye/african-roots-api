@@ -13,7 +13,7 @@ class MealsTableSeeder extends Seeder
     {
         DB::table('meals')->insert([
             'name' => 'Apple pancakes',
-            'ingredient_id' => 0,
+            'ingredient_id' => ['Flour', 'Sugar', 'Cinnamon', 'Soy milk', 'Apple', 'Coconut oil'],
             'price_id' =>  0,
             'rating' => 4.8,
             'category' => 'Breakfasts',
@@ -21,7 +21,7 @@ class MealsTableSeeder extends Seeder
         ]);
         DB::table('meals')->insert([
             'name' => 'Baked peppers',
-            'ingredient_id' => 0,
+            'ingredient_id' => ['Sweet potato', 'Flour', 'Onion', 'Pepper', 'Cherry tomato', 'Coconut milk'],
             'price_id' =>  0,
             'rating' => 4.5,
             'category' => 'Light meals',
@@ -29,7 +29,7 @@ class MealsTableSeeder extends Seeder
         ]);
         DB::table('meals')->insert([
             'name' => 'Black bean and lentil curry',
-            'ingredient_id' => 0,
+            'ingredient_id' => ['Black bean', 'Lentil', 'Sweet potato', 'Onion', 'Tomato', 'Corn'],
             'price_id' =>  0,
             'rating' => 4.1,
             'category' => 'Light meals',
@@ -37,7 +37,7 @@ class MealsTableSeeder extends Seeder
         ]);
         DB::table('meals')->insert([
             'name' => 'Blueberry smoothie',
-            'ingredient_id' => 0,
+            'ingredient_id' => ['Blueberry', 'Coconut milk'],
             'price_id' =>  0,
             'rating' => 4.3,
             'category' => 'Drinks',
@@ -45,7 +45,7 @@ class MealsTableSeeder extends Seeder
         ]);
         DB::table('meals')->insert([
             'name' => 'Braaibroodjie',
-            'ingredient_id' => 0,
+            'ingredient_id' => ['Bread', 'Onion', 'Tomato', 'Vegan mayo', 'Sweet potato'],
             'price_id' =>  0,
             'rating' => 4.5,
             'category' => 'Light meals',
@@ -53,7 +53,7 @@ class MealsTableSeeder extends Seeder
         ]);
         DB::table('meals')->insert([
             'name' => 'Bunny chow',
-            'ingredient_id' => 0,
+            'ingredient_id' => ['Butternut', 'Onion', 'Sweet potato', 'Chickpea', 'Coconut milk', 'Bread'],
             'price_id' =>  0,
             'rating' => 4.7, 
             'category' => 'Light meals',
@@ -61,7 +61,7 @@ class MealsTableSeeder extends Seeder
         ]);
         DB::table('meals')->insert([
             'name' => 'Butternut muffin',
-            'ingredient_id' => 0,
+            'ingredient_id' => ['Flour', 'Sugar', 'Cinnamon', 'Butternut'],
             'price_id' =>  0,
             'rating' => 4.6,
             'category' => 'Breakfassa',
@@ -69,7 +69,7 @@ class MealsTableSeeder extends Seeder
         ]);
         DB::table('meals')->insert([
             'name' => 'Cappuccino',
-            'ingredient_id' => 0,
+            'ingredient_id' => ['Coffee', 'Almond milk', 'Sugar'],
             'price_id' =>  0,
             'rating' => 4.7,
             'category' => 'Drinks',
@@ -77,7 +77,7 @@ class MealsTableSeeder extends Seeder
         ]);
         DB::table('meals')->insert([
             'name' => 'Creamy potato soup',
-            'ingredient_id' => 0,
+            'ingredient_id' => ['Potato', 'Onion', 'Carrot', 'Coconut milk', 'Olive oil'],
             'price_id' =>  0,
             'rating' => 4.9,
             'category' => 'Light meals',
@@ -85,7 +85,7 @@ class MealsTableSeeder extends Seeder
         ]);
         DB::table('meals')->insert([
             'name' => 'Fresh fruit juices',
-            'ingredient_id' => 0,
+            'ingredient_id' => ['Apple', 'Mango'],
             'price_id' =>  0,
             'rating' => 4.5,
             'category' => 'Drinks',
@@ -93,7 +93,7 @@ class MealsTableSeeder extends Seeder
         ]);
         DB::table('meals')->insert([
             'name' => 'Koeksisters',
-            'ingredient_id' => 0,
+            'ingredient_id' => ['Sugar', 'Cinnamon', 'Flour'],
             'price_id' =>  0,
             'rating' => 4.9,
             'category' => 'Desserts',
@@ -101,7 +101,7 @@ class MealsTableSeeder extends Seeder
         ]);
         DB::table('meals')->insert([
             'name' => 'Mango and berry smoothie',
-            'ingredient_id' => 0,
+            'ingredient_id' => ['Mango', 'Raspberry', 'Blueberry', 'Coconut milk'],
             'price_id' =>  0,
             'rating' => 4.2,
             'category' => 'Drinks',
@@ -109,7 +109,7 @@ class MealsTableSeeder extends Seeder
         ]);
         DB::table('meals')->insert([
             'name' => 'Melktert',
-            'ingredient_id' => 0,
+            'ingredient_id' => ['Flour', 'Coconut milk', 'Cashew', 'Cinnamon'],
             'price_id' =>  0,
             'rating' => 4.9,
             'category' => 'Desserts',
@@ -117,7 +117,7 @@ class MealsTableSeeder extends Seeder
         ]);
         DB::table('meals')->insert([
             'name' => 'Mini meatless sausage rolls',
-            'ingredient_id' => 0,
+            'ingredient_id' => ['Flour', 'Spinach', 'Chickpea', 'Onion'],
             'price_id' =>  0,
             'rating' => 4.8,
             'category' => 'Light meals',
@@ -125,7 +125,7 @@ class MealsTableSeeder extends Seeder
         ]);
         DB::table('meals')->insert([
             'name' => 'Mushroom and spinach pizza',
-            'ingredient_id' => 0,
+            'ingredient_id' => ['Flour', 'Spinach', 'Mushroom', 'Olive oil', 'Almond'],
             'price_id' =>  0,
             'rating' => 4.9,
             'category' => 'Light meals',
@@ -133,7 +133,7 @@ class MealsTableSeeder extends Seeder
         ]);
         DB::table('meals')->insert([
             'name' => 'Polenta fries',
-            'ingredient_id' => 0,
+            'ingredient_id' => ['Soy milk', 'Polenta', 'Olive oil', 'Tomato'],
             'price_id' =>  0,
             'rating' => 4.7,
             'category' => 'Light meals',
@@ -141,7 +141,7 @@ class MealsTableSeeder extends Seeder
         ]);
         DB::table('meals')->insert([
             'name' => 'Quinoa bowl',
-            'ingredient_id' => 0,
+            'ingredient_id' => ['Quinoa', 'Blueberry', 'Almond', 'Almond milk'],
             'price_id' =>  0,
             'rating' => 4.8,
             'category' => 'Breakfasts',
@@ -149,7 +149,7 @@ class MealsTableSeeder extends Seeder
         ]);
         DB::table('meals')->insert([
             'name' => 'Scones',
-            'ingredient_id' => 0,
+            'ingredient_id' => ['Flour', 'Vegan mayo', 'Soy milk', 'Raspberry'],
             'price_id' =>  0,
             'rating' => 4.5,
             'category' => 'Breakfasts',
