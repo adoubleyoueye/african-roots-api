@@ -2,15 +2,17 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use Jenssegers\Mongodb\Eloquent\Model;
 
 class Inventory extends Model
 {
     protected $connection="mongodb";
     protected $table = 'inventory';
-
+    protected $fillable = [
+        'quantity', 'price'
+    ];
     public function meals()
     {
-        return $this->hasMany(Meal::class);
+        return $this->belongsToMany(Meal::class);
     }
 }

@@ -12,8 +12,12 @@ class Meal extends Model
     protected $fillable = [
         'name', 'price', 'rating'
     ];
-    public function meal()
+    public function users()
     {
-     
+     return $this->hasMany(User::class);
+    }
+    public function inventory()
+    {
+     return $this->belongsToMany('App\Inventory');
     }
 }
