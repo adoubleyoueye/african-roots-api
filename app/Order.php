@@ -10,7 +10,7 @@ class Order extends Model
     protected $table = 'orders';
 
     protected $fillable = [
-        'user_id', 'meal_id', 'order_number', 'order_status','customer_notes'
+        'user_id', 'user_name', 'meal_id', 'order_number', 'order_status','customer_notes'
     ];
 
     public function users()
