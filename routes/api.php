@@ -18,11 +18,14 @@ Route::middleware('auth:api')->group(function () {
     Route::get('user', 'PassportController@details');
 });
 
+Route::get('admin/users', 'UserController@index');
 Route::get('inventory', 'InventoryController@index');
 Route::get('meals', 'MealController@index');
 Route::post('meals', 'MealController@store');
 Route::get('orders', 'OrderController@index');
 Route::post('orders', 'OrderController@store');
+Route::put('orders/{id}', 'OrderController@update');
+
 
 
 

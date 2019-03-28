@@ -1,17 +1,22 @@
-# African Roots API using Laravel Passport  
-How to install
+# African Roots API using Laravel Passport
+
+## Installation
+
  - Clone the repository
- - Set up database credentials in .env file
- - Run `composer update`
- - Run `php artisan migrate` to migrate the database
- - Run `php artisan passport:install`
+ - Set up database credentials in the .env file
+ - Run ```composer update```
+ - Run ```php artisan migrate``` to migrate the database
+ - Run ```php artisan db:seed``` to seed data into the database
 
 ## API Routes
 
-All meals
+```https://dev-african-roots.herokuapp.com/api/register [POST]```
+```https://dev-african-roots.herokuapp.com/api/login [POST]```
+```https://dev-african-roots.herokuapp.com/api/meals [GET]```
+```https://dev-african-roots.herokuapp.com/api/inventory [GET]```
+```https://dev-african-roots.herokuapp.com/api/orders [GET]```
+(you can also substitute the base url with 127.0.0.1:8000/ remember to run php artisan serve)
 
-```https://dev-african-roots.herokuapp.com/api/register```
-```https://dev-african-roots.herokuapp.com/api/meals```
 ## Sources
 
 - https://tutsforweb.com/laravel-passport-create-rest-api-with-authentication)

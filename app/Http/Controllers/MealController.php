@@ -9,7 +9,7 @@ class MealController extends Controller
     public function index()
     {
         return Meal::all();
-            return parent::formatResponse($meals, true, 200);
+        return parent::formatResponse($meals, true, 200);
     }
     public function store(Request $request)
     {
