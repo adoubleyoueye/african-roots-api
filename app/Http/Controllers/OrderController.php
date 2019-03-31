@@ -37,38 +37,40 @@ class OrderController extends Controller
         $orders = Order::create($request->all());
         return response()->json($orders);
     }
-    // public function update(Request $request, $id)
-    // {
-    //     $orders = Order::find($id);
-    //     if (!$orders) {
-    //         return response()->json([
-    //             'success' => false,
-    //             'message' => 'orders with id ' . $id . ' not found'
-    //         ], 400);
-    //     }
+    public function update(Request $request, $id)
+    {
+        $orders = Order::find($id);
+        if (!$orders) {
+            return response()->json([
+                'success' => false,
+                'message' => 'orders with id ' . $id . ' not found'
+            ], 400);
+        }
 
-    //     $updated = $orders->fill($request->all())->save();
+        $updated = $orders->fill($request->all())->save();
 
-    //     if ($updated)
-    //         return response()->json([
-    //             'success' => true
-    //         ]);
-    //     else
-    //         return response()->json([
-    //             'success' => false,
-    //             'message' => 'Product could not be updated'
-    //         ], 500);
-    // }
-//     public function update(Request $request, $id)
+        if ($updated)
+            return response()->json([
+                'success' => true
+            ]);
+        else
+            return response()->json([
+                'success' => false,
+                'message' => 'Product could not be updated'
+            ], 500);
+        }
+    }
+//     }
+//     public function update(Request $request, $_id)
 // {
-//     $orders = Order::find($id); //get the object of product you want to update
+//     $orders = Order::find($_id); //get the object of product you want to update
 //     $product = new product;
 
 
 //         if (!$orders) {
 //                     return response()->json([
 //                         'success' => false,
-//                         'message' => 'orders with id ' . $id . ' not found'
+//                         'message' => 'orders with id ' . $_id . ' not found'
 //                     ], 400);
 //                 }
 
@@ -88,18 +90,18 @@ class OrderController extends Controller
 
 
 
-public function update(Request $request, $id)
-{
-   $orders = Order::find($id);
+// public function update(Request $request, $_id)
+// {
+//    $orders = Order::find($id);
 //    $orders->user_id = auth()->id();
 //    $orders->content = $request->content;
 //    $orders->live = (boolean)$request->live;
 // $input = $request->all();
 
         // $orders->fill($input)->save();
-   $orders->customer_notes = $request->customer_notes;
-   $orders->save();
-}
+//    $orders->order_number = $request->order_number;
+//    $orders->save();
+// }
 // public function update(Request $request, $id)
 
 // {
@@ -118,19 +120,19 @@ public function update(Request $request, $id)
 //                     ->with('success','Post updated successfully');
 
 // }
-// public function update(Request $request, $id)
-// {
-//     $this->validate($request, [
-//     'order_status' => 'filled'
-//      ]);
-//     $orders = Order::find($id);
-//     if($orders->fill($request->all())->save()){
-//        return response()->json(['status' => 'success']);
-//     }
-//     return response()->json(['status' => 'failed']);
-// }
-    // }
-    // $orders->name = $request['name'];
-    //$orders->value = $request['value'];
+public function update(Request $request, $id)
+{
+    $this->validate($request, [
+    'order_status' => 'filled'
+     ]);
+    $orders = Order::find($id);
+    if($orders->fill($request->all())->save()){
+       return response()->json(['status' => 'success']);
+    }
+    return response()->json(['status' => 'failed']);
+}
+    }
+    $orders->name = $request['name'];
+    $orders->value = $request['value'];
 
 }
