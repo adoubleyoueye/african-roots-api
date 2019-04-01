@@ -28,3 +28,4 @@
 - https://appdividend.com/2018/05/17/laravel-many-to-many-relationship-example/
 - https://vegibit.com/many-to-many-relationships-in-laravel/
 - https://github.com/sadnub/laravel-mongodb-passport-fix
+- https://stackoverflow.com/questions/51745860/laravel-put-patch-request
