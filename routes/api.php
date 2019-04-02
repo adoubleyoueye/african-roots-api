@@ -27,7 +27,7 @@ Route::get('meals', 'MealController@index');
 Route::post('meals', 'MealController@store');
 Route::get('orders', 'OrderController@index');
 Route::post('orders', 'OrderController@store');
-Route::delete('orders/{id}', function($id) {
+Route::delete('admin/orders/{id}', function($id) {
     Order::find($id)->delete();
 
     return 204;
