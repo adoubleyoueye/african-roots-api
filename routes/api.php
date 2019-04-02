@@ -22,6 +22,7 @@ Route::middleware('auth:api')->group(function () {
 Route::get('admin/users', 'UserController@index');
 Route::put('admin/users/{id}', 'UserController@update');
 Route::get('inventory', 'InventoryController@index');
+Route::put('inventory', 'InventoryController@update');
 Route::get('meals', 'MealController@index');
 Route::post('meals', 'MealController@store');
 Route::get('orders', 'OrderController@index');
