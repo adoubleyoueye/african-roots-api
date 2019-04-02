@@ -10,7 +10,7 @@
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
+use App\Order;
 Route::post('login', 'PassportController@login');
 Route::post('register', 'PassportController@register');
 
@@ -27,6 +27,12 @@ Route::get('meals', 'MealController@index');
 Route::post('meals', 'MealController@store');
 Route::get('orders', 'OrderController@index');
 Route::post('orders', 'OrderController@store');
+Route::delete('orders/{id}', function($id) {
+    Order::find($id)->delete();
+
+    return 204;
+});
+// Route::delete('orders', 'OrderController@destroy');
 Route::put('orders/{id}', 'OrderController@update');
 
 
