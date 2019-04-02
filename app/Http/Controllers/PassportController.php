@@ -18,13 +18,14 @@ class PassportController extends Controller
         $this->validate($request, [
             'name' => 'required|min:3',
             'email' => 'required|email|unique:users',
-            'password' => 'required|min:6',
+            'password' => 'required|min:6'
         ]);
 
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
-            'password' => bcrypt($request->password)
+            'password' => bcrypt($request->password),
+            'role' => $request->role
         ]);
 
         $token = $user->createToken('africanroots')->accessToken;
