@@ -17,6 +17,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 1,
             'unit' => 'g',
             'category' => 'SeedsNuts',
+            'season' => 'summer',
             'image' => 'almonds.png'
         ]);
         DB::table('inventory')->insert([
@@ -25,6 +26,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 7,
             'unit' => 'ml',
             'category' => 'Liquids',
+            'season' => 'summer',
             'image' => 'almond-milk.png'
         ]);
         DB::table('inventory')->insert([
@@ -33,6 +35,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 3,
             'unit' => 'g',
             'category' => 'Fruits',
+            'season' => 'winter',
             'image' => 'apples.png'
         ]);
         DB::table('inventory')->insert([
@@ -41,6 +44,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 1,
             'unit' => 'g',
             'category' => 'Vegetables',
+            'season' => 'all',
             'image' => 'black-beans.png'
         ]);
         DB::table('inventory')->insert([
@@ -49,6 +53,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 2,
             'unit' => 'g',
             'category' => 'Fruits',
+            'season' => 'summer',
             'image' => 'blueberries.png'
         ]);
         DB::table('inventory')->insert([
@@ -57,6 +62,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 5,
             'unit' => 'pc',
             'category' => 'FlourSpices',
+            'season' => 'all',
             'image' => 'bread.png'
         ]);
         DB::table('inventory')->insert([
@@ -65,6 +71,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 8,
             'unit' => 'g',
             'category' => 'Vegetables',
+            'season' => 'summer',
             'image' => 'butternut.png'
         ]);
         DB::table('inventory')->insert([
@@ -73,6 +80,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 2,
             'unit' => 'g',
             'category' => 'Vegetables',
+            'season' => 'spring/autumn',
             'image' => 'carrots.png'
         ]);
         DB::table('inventory')->insert([
@@ -81,6 +89,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 2,
             'unit' => 'g',
             'category' => 'SeedsNuts',
+            'season' => 'winter',
             'image' => 'cashews.png'
         ]);
         DB::table('inventory')->insert([
@@ -89,6 +98,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 2,
             'unit' => 'g',
             'category' => 'Vegetables',
+            'season' => 'summer',
             'image' => 'cherry-tomatoes.png'
         ]);
         DB::table('inventory')->insert([
@@ -97,6 +107,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 1,
             'unit' => 'g',
             'category' => 'Vegetables',
+            'season' => 'winter',
             'image' => 'chickpeas.png'
         ]);
         DB::table('inventory')->insert([
@@ -105,6 +116,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 1,
             'unit' => 'g',
             'category' => 'FlourSpices',
+            'season' => 'summer',
             'image' => 'cinnamon.png'
         ]);
         DB::table('inventory')->insert([
@@ -113,6 +125,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 7,
             'unit' => 'ml',
             'category' => 'Liquids',
+            'season' => 'all',
             'image' => 'coconut-milk.png'
         ]);
         DB::table('inventory')->insert([
@@ -121,6 +134,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 3,
             'unit' => 'ml',
             'category' => 'Liquids',
+            'season' => 'all',
             'image' => 'coconut-oil.png'
         ]);
         DB::table('inventory')->insert([
@@ -129,6 +143,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 5,
             'unit' => 'g',
             'category' => 'SeedsNuts',
+            'season' => 'summer',
             'image' => 'coffee.png'
         ]);
         DB::table('inventory')->insert([
@@ -137,6 +152,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 1,
             'unit' => 'g',
             'category' => 'Vegetables',
+            'season' => 'spring/autumn',
             'image' => 'corn.png'
         ]);
         DB::table('inventory')->insert([
@@ -145,6 +161,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 1,
             'unit' => 'g',
             'category' => 'FlourSpices',
+            'season' => 'spring/autumn',
             'image' => 'flour.png'
         ]);
         DB::table('inventory')->insert([
@@ -153,6 +170,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 1,
             'unit' => 'g',
             'category' => 'Vegetables',
+            'season' => 'winter',
             'image' => 'lentils.png'
         ]);
         DB::table('inventory')->insert([
@@ -161,6 +179,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 5,
             'unit' => 'g',
             'category' => 'Fruits',
+            'season' => 'summer',
             'image' => 'mango.png'
         ]);
         DB::table('inventory')->insert([
@@ -169,6 +188,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 2,
             'unit' => 'g',
             'category' => 'Vegetables',
+            'season' => 'all',
             'image' => 'mushroom.png'
         ]);
         DB::table('inventory')->insert([
@@ -177,6 +197,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 2,
             'unit' => 'ml',
             'category' => 'Liquids',
+            'season' => 'summer',
             'image' => 'olive-oil.png'
         ]);
         DB::table('inventory')->insert([
@@ -185,6 +206,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 2,
             'unit' => 'g',
             'category' => 'Vegetables',
+            'season' => 'winter',
             'image' => 'onions.png'
         ]);
         DB::table('inventory')->insert([
@@ -193,6 +215,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 2,
             'unit' => 'g',
             'category' => 'Vegetables',
+            'season' => 'spring/autumn',
             'image' => 'peppers.png'
         ]);
         DB::table('inventory')->insert([
@@ -201,6 +224,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 8,
             'unit' => 'g',
             'category' => 'FlourSpices',
+            'season' => 'spring/autumn',
             'image' => 'polenta.png'
         ]);
         DB::table('inventory')->insert([
@@ -209,6 +233,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 3,
             'unit' => 'g',
             'category' => 'Vegetables',
+            'season' => 'spring/autumn',
             'image' => 'potato.png'
         ]);
         DB::table('inventory')->insert([
@@ -217,6 +242,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 1,
             'unit' => 'g',
             'category' => 'FlourSpices',
+            'season' => 'summer',
             'image' => 'quinoa.png'
         ]);
         DB::table('inventory')->insert([
@@ -225,6 +251,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 3,
             'unit' => 'g',
             'category' => 'Fruits',
+            'season' => 'spring/autumn',
             'image' => 'raspberries.png'
         ]);
         DB::table('inventory')->insert([
@@ -233,6 +260,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 7,
             'unit' => 'ml',
             'category' => 'Liquids',
+            'season' => 'winter',
             'image' => 'soy-milk.png'
         ]);
         DB::table('inventory')->insert([
@@ -241,6 +269,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 2,
             'unit' => 'g',
             'category' => 'Vegetables',
+            'season' => 'spring/autumn',
             'image' => 'spinach.png' 
         ]);
         DB::table('inventory')->insert([
@@ -249,6 +278,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 1,
             'unit' => 'g',
             'category' => 'FlourSpices',
+            'season' => 'summer',
             'image' => 'sugar.png'
         ]);
         DB::table('inventory')->insert([
@@ -257,6 +287,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 3,
             'unit' => 'g',
             'category' => 'Vegetables',
+            'season' => 'summer',
             'image' => 'sweet-potato.png'
         ]);
         DB::table('inventory')->insert([
@@ -265,6 +296,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 2,
             'unit' => 'g',
             'category' => 'Vegetables',
+            'season' => 'summer',
             'image' => 'tomatoes.png'
         ]);
         DB::table('inventory')->insert([
@@ -273,6 +305,7 @@ class InventoryTableSeeder extends Seeder
             'price' => 3,
             'unit' => 'ml',
             'category' => 'Liquids',
+            'season' => 'all',
             'image' => 'vegan-mayo.png'
         ]);
     }

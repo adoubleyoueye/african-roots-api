@@ -20,6 +20,7 @@ class CreateInventoryTable extends Migration
             $table->integer('price');
             $table->string('category');
             $table->string('unit');
+            $table->string('season');
             $table->timestamps();
         });
     }
