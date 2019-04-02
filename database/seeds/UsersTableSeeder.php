@@ -15,7 +15,7 @@ class UsersTableSeeder extends Seeder
             'name' => 'Admin',
             'email' =>  'admin@mail.com',
             'password' => 'root',
-            'role' => '2'
+            'role' => 2
         ]);
     }
 }
