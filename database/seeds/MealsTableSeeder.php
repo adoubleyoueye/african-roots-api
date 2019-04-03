@@ -97,7 +97,7 @@ class MealsTableSeeder extends Seeder
             'price_id' =>  55,
             'rating' => 4.9,
             'category' => 'Desserts',
-            'image' => 'koeksisters.png")'
+            'image' => 'koeksisters.png'
         ]);
         DB::table('meals')->insert([
             'name' => 'Mango and berry smoothie',
