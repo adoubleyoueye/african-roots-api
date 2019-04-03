@@ -37,7 +37,8 @@ class OrderController extends Controller
         else
             return response()->json([
                 'success' => false,
-                'message' => 'Product could not be updated'
+                'message' => 'orders could not be updated'
             ], 500);
         }
+
     }
