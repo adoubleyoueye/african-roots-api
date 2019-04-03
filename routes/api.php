@@ -11,6 +11,7 @@
 |
 */
 use App\Order;
+header('Access-Control-Allow-Origin: *');
 Route::post('login', 'PassportController@login');
 Route::post('register', 'PassportController@register');
 
@@ -22,7 +23,7 @@ Route::middleware('auth:api')->group(function () {
 Route::get('admin/users', 'UserController@index');
 Route::put('admin/users/{id}', 'UserController@update');
 Route::get('inventory', 'InventoryController@index');
-Route::put('inventory', 'InventoryController@update');
+Route::put('inventory/{id}', 'InventoryController@update');
 Route::get('meals', 'MealController@index');
 Route::post('meals', 'MealController@store');
 Route::get('orders', 'OrderController@index');
@@ -32,7 +33,6 @@ Route::delete('admin/orders/{id}', function($id) {
 
     return 204;
 });
-// Route::delete('orders', 'OrderController@destroy');
 Route::put('orders/{id}', 'OrderController@update');
 
 
