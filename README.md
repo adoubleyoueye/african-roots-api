@@ -11,6 +11,7 @@
 ## API Routes
 
 ```https://dev-african-roots.herokuapp.com/api/register [POST]```
+
 ```https://dev-african-roots.herokuapp.com/api/login [POST]```
 ```https://dev-african-roots.herokuapp.com/api/meals [GET]```
 ```https://dev-african-roots.herokuapp.com/api/inventory [GET]```

@@ -40,4 +40,5 @@ class OrderController extends Controller
                 'message' => 'orders could not be updated'
             ], 500);
         }
+
     }

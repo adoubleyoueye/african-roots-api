@@ -11,7 +11,6 @@
 |
 */
 use App\Order;
-header('Access-Control-Allow-Origin: *');
 Route::post('login', 'PassportController@login');
 Route::post('register', 'PassportController@register');
 
