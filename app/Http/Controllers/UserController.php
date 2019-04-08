@@ -8,11 +8,20 @@ use App\User;
 class UserController extends Controller
 {
     public function index()
+    /**
+     * Responds to requests to GET /admin/users
+     * Shows all
+     */
     {
         return User::all();
         return parent::formatResponse($user, true, 200);
     }
     public function update(Request $request, $id)
+    /**
+     * Responds to requests to PUT /admin/users/{id}
+     * Shows specific page with matching id
+     * saves updated
+     */
     {
         $user = User::find($id);
         if (!$user) {

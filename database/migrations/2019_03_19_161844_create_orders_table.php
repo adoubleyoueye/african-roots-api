@@ -12,6 +12,9 @@ class CreateOrdersTable extends Migration
      * @return void
      */
     public function up()
+    /**
+     * This creates a orders table with fillable columns.
+     */
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->increments('id');

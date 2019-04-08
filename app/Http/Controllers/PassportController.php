@@ -8,12 +8,15 @@ use Illuminate\Http\Request;
 class PassportController extends Controller
 {
     /**
-     * Handles Registration Request
+     * Handles the Registration Request
      *
      * @param Request $request
      * @return \Illuminate\Http\JsonResponse
      */
     public function register(Request $request)
+    /**
+     * Responds to requests to POST /register
+     */
     {
         $this->validate($request, [
             'name' => 'required|min:3',
@@ -40,6 +43,9 @@ class PassportController extends Controller
      * @return \Illuminate\Http\JsonResponse
      */
     public function login(Request $request)
+    /**
+     * Responds to requests to POST /login
+     */
     {
         $credentials = [
             'email' => $request->email,
@@ -60,6 +66,9 @@ class PassportController extends Controller
      * @return \Illuminate\Http\JsonResponse
      */
     public function details()
+    /**
+     * Responds to requests to GET /details
+     */
     {
         return response()->json(['user' => auth()->user()], 200);
     }

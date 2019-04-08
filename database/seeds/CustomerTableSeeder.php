@@ -5,7 +5,7 @@ use Illuminate\Database\Seeder;
 class CustomerTableSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * Runs the database seeds.
      *
      * @return void
      */

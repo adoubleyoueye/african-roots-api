@@ -12,6 +12,9 @@ class CreateUsersTable extends Migration
      * @return void
      */
     public function up()
+    /**
+     * This creates a users table with fillable columns.
+     */
     {
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');

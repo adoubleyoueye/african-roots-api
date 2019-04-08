@@ -17,6 +17,9 @@ class User extends Authenticatable
      *
      * @var array
      */
+    /**
+     * This creates fillable columns for the users table.
+     */
     protected $fillable = [
         'name', 'email', 'password', 'role'
     ];
@@ -31,6 +34,9 @@ class User extends Authenticatable
     ];
 
     public function meals()
+    /**
+     * This shows that a user can have many meals.
+     */
     {
         return $this->belongsToMany(Meal::class);
     }

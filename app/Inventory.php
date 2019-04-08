@@ -8,6 +8,9 @@ class Inventory extends Model
 {
     protected $connection="mongodb";
     protected $table = 'inventory';
+    /**
+     * This creates fillable columns for the inventory table.
+     */
     protected $fillable = [
         'quantity', 'price'
     ];

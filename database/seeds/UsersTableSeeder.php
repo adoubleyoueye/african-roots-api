@@ -10,6 +10,9 @@ class UsersTableSeeder extends Seeder
      * @return void
      */
     public function run()
+    /**
+     * Sends this data to the users table in the database
+     */
     {
         DB::table('users')->insert([
             'name' => 'Admin',

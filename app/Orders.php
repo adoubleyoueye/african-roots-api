@@ -8,7 +8,9 @@ class Orders extends Model
 {   
     protected $connection="mongodb";
     protected $table = 'orders';
-
+    /**
+     * This creates fillable columns for the orders table.
+     */
     protected $fillable = [
         'id', 'user_id', 'meal_id'
     ];

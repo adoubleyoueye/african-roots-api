@@ -7,11 +7,20 @@ use Illuminate\Http\Request;
 class InventoryController extends Controller
 {
     public function index()
+    /**
+     * Responds to requests to GET /inventory
+     * Shows all
+     */
     {
         return Inventory::all();
             return parent::formatResponse($inventory, true, 200);
     }
     public function update(Request $request, $id)
+    /**
+     * Responds to requests to PUT /inventory/{id}
+     * Shows specific page with matching id
+     * saves updated
+     */
     {
         $inventory = Inventory::find($id);
         if (!$inventory) {

@@ -12,6 +12,9 @@ class CreateInventoryTable extends Migration
      * @return void
      */
     public function up()
+    /**
+     * This creates a inventory table with fillable columns.
+     */
     {
         Schema::create('inventory', function (Blueprint $table) {
             $table->bigIncrements('id');

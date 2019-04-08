@@ -9,17 +9,30 @@ use App\Order;
 class OrderController extends Controller
 {
     public function index()
+    /**
+     * Responds to requests to GET /orders
+     * Shows all
+     */
     {
         return Order::all();
         return parent::formatResponse($orders, true, 200);
     }
 
     public function store(Request $request)
+    /**
+     * Responds to requests to POST /meals
+     * inserts new
+     */
     {
         $orders = Order::create($request->all());
         return response()->json($orders);
     }
     public function update(Request $request, $id)
+    /**
+     * Responds to requests to PUT /orders/{id}
+     * Shows specific page with matching id
+     * saves updated
+     */
     {
         $orders = Order::find($id);
         if (!$orders) {

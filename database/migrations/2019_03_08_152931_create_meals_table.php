@@ -12,6 +12,9 @@ class CreateMealsTable extends Migration
      * @return void
      */
     public function up()
+    /**
+     * This creates a meals table with fillable columns.
+     */
     {
         Schema::create('meals', function (Blueprint $table) {
             $table->bigIncrements('id');

@@ -10,6 +10,9 @@ class MealsTableSeeder extends Seeder
      * @return void
      */
     public function run()
+    /**
+     * Sends this data to the meals table in the database
+     */
     {
         DB::table('meals')->insert([
             'name' => 'Apple pancakes',

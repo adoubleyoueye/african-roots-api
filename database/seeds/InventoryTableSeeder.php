@@ -10,6 +10,9 @@ class InventoryTableSeeder extends Seeder
      * @return void
      */
     public function run()
+    /**
+     * Sends this data to the inventory table in the database
+     */
     {
         DB::table('inventory')->insert([
             'name' => 'Almond',
