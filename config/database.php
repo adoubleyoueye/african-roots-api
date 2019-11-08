@@ -61,7 +61,7 @@ return [
             'username' => env('MONGO_DB_USERNAME'),
             'password' => env('MONGO_DB_PASSWORD'),
             'options'  => [
-                'database' => 'heroku_kx57dkwj'
+                'database' => 'heroku_fj6b0fkd'
             ]
         ],
         'pgsql' => [
